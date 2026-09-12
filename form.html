@@ -6,67 +6,66 @@
 </head>
 <body>
 
-    <nav>
-        <b>Navigasi:</b> 
-        <a href='/blog'>Blog List</a> | 
-        <a href='/blog-detail'>Blog Detail</a> | 
-        <a href='/cv'>CV</a> | 
-        <a href='/form'>Form</a> | 
-        <a href='/'>Film</a>
-    </nav>
-    <hr>
-    <!-- Form Pendaftaran -->
-    <form action="#" method="POST">
-        <!-- Fieldset untuk membungkus semua input -->
-        <fieldset>
-            <!-- Legend sebagai judul fieldset -->
-            <legend>Daftar Akun</legend>
+    <!-- Menambahkan tag <main> untuk mengatasi error "Landmark" -->
+    <main>
+        <!-- Menambahkan h1 untuk mengatasi error "Page should contain a level-one heading" -->
+        <h1>Halaman Pendaftaran Akun</h1>
+        
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Daftar Akun</legend>
 
-            Nama Lengkap: <input type="text" name="nama_lengkap" />
-            <hr />
+                <!-- Perbaikan: Menambahkan <label> dengan for dan id pada input -->
+                <label for="nama_lengkap">Nama Lengkap:</label> 
+                <input type="text" name="nama_lengkap" id="nama_lengkap" />
+                <hr />
 
-            Jenis Kelamin: 
-            <input type="radio" name="jenis_kelamin" value="Laki-Laki" id="laki" /> <label for="laki">Laki-Laki</label>
-            <input type="radio" name="jenis_kelamin" value="Perempuan" id="perempuan" /> <label for="perempuan">Perempuan</label>
-            <hr />
+                Jenis Kelamin: 
+                <input type="radio" name="jenis_kelamin" value="Laki-Laki" id="laki" /> <label for="laki">Laki-Laki</label>
+                <input type="radio" name="jenis_kelamin" value="Perempuan" id="perempuan" /> <label for="perempuan">Perempuan</label>
+                <hr />
 
-            Tempat Lahir: <input type="text" name="tempat_lahir" />
-            <hr />
+                <label for="tempat_lahir">Tempat Lahir:</label> 
+                <input type="text" name="tempat_lahir" id="tempat_lahir" />
+                <hr />
 
-            Tanggal Lahir: <input type="date" name="tanggal_lahir" />
-            <hr />
+                <label for="tanggal_lahir">Tanggal Lahir:</label> 
+                <input type="date" name="tanggal_lahir" id="tanggal_lahir" />
+                <hr />
 
-            Agama: 
-            <select name="agama">
-                <option value="">--- Pilih Agama ---</option>
-                <option value="Islam">Islam</option>
-                <option value="Katolik">Katolik</option>
-                <option value="Protestan">Protestan</option>
-                <option value="Hindu">Hindu</option>
-                <option value="Buddha">Buddha</option>
-                <option value="Konghucu">Konghucu</option>
-            </select>
-            <hr />
+                <!-- Perbaikan: Menambahkan <label> untuk <select> -->
+                <label for="agama">Agama:</label> 
+                <select name="agama" id="agama">
+                    <option value="">--- Pilih Agama ---</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Protestan">Protestan</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+                <hr />
 
-            Hobi: 
-            <input type="checkbox" name="hobi" value="Olahraga" id="olahraga" /> <label for="olahraga">Olahraga</label>
-            <input type="checkbox" name="hobi" value="Membaca" id="membaca" /> <label for="membaca">Membaca</label>
-            <input type="checkbox" name="hobi" value="Ngoding" id="ngoding" /> <label for="ngoding">Ngoding</label>
-            <hr />
+                Hobi: 
+                <input type="checkbox" name="hobi" value="Olahraga" id="olahraga" /> <label for="olahraga">Olahraga</label>
+                <input type="checkbox" name="hobi" value="Membaca" id="membaca" /> <label for="membaca">Membaca</label>
+                <input type="checkbox" name="hobi" value="Ngoding" id="ngoding" /> <label for="ngoding">Ngoding</label>
+                <hr />
 
-            Password: <input type="password" name="password" />
-            <hr />
+                <label for="password">Password:</label> 
+                <input type="password" name="password" id="password" />
+                <hr />
 
-            <input type="checkbox" name="persetujuan" id="setuju" /> 
-            <label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
-            <hr />
+                <input type="checkbox" name="persetujuan" id="setuju" /> 
+                <label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
+                <hr />
 
-            <!-- Tombol Reset dan Submit -->
-            <input type="reset" value="Reset" />
-            <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Submit" />
 
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
+    </main>
 
 </body>
 </html>
