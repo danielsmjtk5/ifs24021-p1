@@ -5,40 +5,31 @@
     <title>Detail Blog - How to Deploy a Web Application</title>
 </head>
 <body>
-    <!-- Tag <main> ditambahkan agar lolos pengecekan "Landmark" -->
     <main>
-        
-        <!-- Gambar Cover dengan lebar 100% -->
         <img src="https://dummyimage.com/1200x400/5e9eab/ffffff.png&text=Docker+and+NGINX" width="100%" alt="Cover Image" />
 
         <br /><br />
 
-        <!-- Informasi Author (menggunakan tabel untuk memposisikan gambar & teks tanpa CSS) -->
         <table>
             <tr>
                 <td valign="top">
                     <img src="https://dummyimage.com/32x32/cccccc/000000.png&text=32x32" width="32" height="32" alt="Profile Vishnu" />
                 </td>
                 <td>
-                    <!-- Informasi username & tanggal masing-masing dibungkus oleh span -->
                     <span><b>Vishnu Satheesh</b></span><br />
                     <span>Posted on May 31</span>
                 </td>
             </tr>
         </table>
 
-        <!-- Judul Blog menggunakan heading level 1 -->
         <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
 
-        <!-- Informasi Tag -->
         <p>
             <span>#webdev</span> &nbsp; <span>#devops</span>
         </p>
 
-        <!-- Garis horizontal memisahkan judul dengan konten -->
         <hr />
 
-        <!-- Isi Konten Blog (menggunakan paragraf) -->
         <p>
             Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.<br />
             In this blog, I'll show you step by step how to serve your app with a domain, route traffic with NGINX, and run it all inside a Docker container. This guide is specifically tailored for a Linux-based server
@@ -53,7 +44,6 @@
             Dockerfile:
         </p>
         
-        <!-- <pre> digunakan untuk mempertahankan spasi dan baris baru pada kode -->
         <pre>
 FROM node:20-alpine
 WORKDIR /app
@@ -74,10 +64,8 @@ CMD [ "npm", "start" ]
             By containerizing your app, setting up NGINX as a reverse proxy, and linking everything together on your VPS, you gain full control over your deployment process.
         </p>
 
-        <!-- Garis horizontal memisahkan konten dengan komentar -->
         <hr />
 
-        <!-- Bagian Komentar -->
         <p><b>Top comments (0)</b></p>
         <table>
             <tr>
@@ -85,7 +73,6 @@ CMD [ "npm", "start" ]
                     <img src="https://dummyimage.com/32x32/cccccc/000000.png&text=32x32" width="32" height="32" alt="Profile Commenter" />
                 </td>
                 <td>
-                    <!-- Textarea dengan jumlah baris 3 dan placeholder -->
                     <textarea rows="3" cols="40" placeholder="Add to the discussion" aria-label="Add to the discussion"></textarea>
                 </td>
             </tr>
