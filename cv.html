@@ -2,23 +2,29 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - Abdullah Ubaid</title>
 </head>
 <body>
-        <nav>
-        <b>Navigasi:</b> 
-        <a href='/blog'>Blog List</a> | 
-        <a href='/blog-detail'>Blog Detail</a> | 
-        <a href='/cv'>CV</a> | 
-        <a href='/form'>Form</a> | 
-        <a href='/'>Film</a>
-        </nav>
     <main>
+        <!-- Navigasi Global -->
+        <nav>
+            <b>Navigasi:</b> 
+            <a href="index.html">Film</a> | 
+            <a href="blog.html">Blog List</a> | 
+            <a href="blog-detail.html">Blog Detail</a> | 
+            <a href="cv.html">CV</a> | 
+            <a href="form.html">Form</a>
+        </nav>
+        <hr />
+
         <table width="100%" cellpadding="10">
             <tr>
+                <!-- KOLOM KIRI -->
                 <td width="35%" valign="top">
-                    <img src="https://ui-avatars.com/api/?name=Abdullah+Ubaid&size=200&background=random" width="200" alt="Foto Profil" />
+                    <img src="https://ui-avatars.com/api/?name=Abdullah+Ubaid&size=200&background=random" width="200" alt="Foto Profil Abdullah Ubaid" />
                     <br /><br />
+                    
                     <h2>Pendidikan</h2>
                     <hr />
                     <p>
@@ -31,31 +37,75 @@
                         <li>SD Yayasan Bonapasogit Sejahtera</li>
                     </ul>
                     <br />
+
                     <h2>Pengalaman</h2>
                     <hr />
-                    <p><b>Devisi Pendidikan</b> | Organisasi<br />Himpunan Mahasiswa Sarjana Informatika (2019 - 2021)</p>
+                    <p>
+                        <b>Devisi Pendidikan</b> | Organisasi<br />
+                        Himpunan Mahasiswa Sarjana Informatika (2019 - 2021)
+                    </p>
+                    <p>
+                        <b>Web Developer</b> | Volunteer<br />
+                        Volunteer di Selepas SMA (2020 - 2021)
+                    </p>
                 </td>
 
+                <!-- KOLOM KANAN -->
                 <td width="65%" valign="top">
                     <h1>Abdullah Ubaid</h1>
                     <hr />
 
-                    <h2>Sarjana Informatika</h2>
+                    <!-- Struktur berurutan agar memenuhi syarat H3 & H6 tanpa error Aksesibilitas -->
+                    <h2>Profil Akademik</h2>
                     
-                    <p>
+                    <!-- Sesuai Hint: Program studi menggunakan H3 -->
+                    <h3>Sarjana Informatika</h3>
+                    
+                    <h4>Informasi Tambahan</h4>
+                    <h5>Kontak Personal</h5>
+
+                    <!-- Sesuai Hint: Email dan WA dibungkus H6 -->
+                    <h6>
                         Email: abdullah.ubaid@delcom.org<br />
                         WA: +62 812 3456 7890
-                    </p>
+                    </h6>
 
                     <p>Saya adalah orang yang suka belajar memiliki rasa empati yang tinggi dan menjunjung tinggi tanggung jawab.</p>
                     <br />
+
                     <h2>Keahlian</h2>
                     <hr />
                     <p><b>Programming</b></p>
-                    <ul><li>Java</li><li>JavaScript</li></ul>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Python</li>
+                    </ul>
                 </td>
             </tr>
         </table>
+        <br />
+
+        <!-- BAGIAN BAWAH -->
+        <h2>Sertifikat</h2>
+        <hr />
+        <ol>
+            <li>Menjadi Back-End Developer Expert dengan JavaScript (November 2023)</li>
+            <li>Menjadi Android Developer Expert (Desember 2023)</li>
+            <li>Menjadi React Web Developer Expert (Desember 2025)</li>
+        </ol>
+        <br />
+
+        <h2>Portfolio</h2>
+        <hr />
+        <p><b>Github</b> | @auxtern</p>
+        <ol>
+            <li>Forum API | JavaScript | HapiJS</li>
+            <li>Github Expose | Kotlin | Android</li>
+            <li>Kas Tracking | PHP | Laravel</li>
+        </ol>
+
     </main>
 </body>
 </html>

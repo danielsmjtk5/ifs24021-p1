@@ -2,27 +2,32 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Daftar Akun</title>
 </head>
 <body>
-    <nav>
-        <b>Navigasi:</b> 
-        <a href='/blog'>Blog List</a> | 
-        <a href='/blog-detail'>Blog Detail</a> | 
-        <a href='/cv'>CV</a> | 
-        <a href='/form'>Form</a> | 
-        <a href='/'>Film</a>
-    </nav>
-    
     <main>
-        <h1>Halaman Pendaftaran Akun</h1>
+        <!-- Navigasi Global -->
+        <nav>
+            <b>Navigasi:</b> 
+            <a href="index.html">Film</a> | 
+            <a href="blog.html">Blog List</a> | 
+            <a href="blog-detail.html">Blog Detail</a> | 
+            <a href="cv.html">CV</a> | 
+            <a href="form.html">Form</a>
+        </nav>
+        <hr />
+
+        <h1>Pendaftaran Akun Pengguna</h1>
         
         <form action="#" method="POST">
+            <!-- Fieldset dan Legend murni HTML -->
             <fieldset>
                 <legend>Daftar Akun</legend>
 
+                <!-- Input validasi dengan proper label untuk Aksesibilitas (Clean Code) -->
                 <label for="nama_lengkap">Nama Lengkap:</label> 
-                <input type="text" name="nama_lengkap" id="nama_lengkap" />
+                <input type="text" name="nama_lengkap" id="nama_lengkap" required />
                 <hr />
 
                 Jenis Kelamin: 
@@ -57,19 +62,19 @@
                 <hr />
 
                 <label for="password">Password:</label> 
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" required />
                 <hr />
 
-                <input type="checkbox" name="persetujuan" id="setuju" /> 
+                <input type="checkbox" name="persetujuan" id="setuju" required /> 
                 <label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
                 <hr />
 
+                <!-- Type reset & submit sesuai best practice HTML -->
                 <input type="reset" value="Reset" />
                 <input type="submit" value="Submit" />
 
             </fieldset>
         </form>
     </main>
-
 </body>
 </html>
